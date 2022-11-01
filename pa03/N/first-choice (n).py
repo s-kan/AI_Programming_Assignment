@@ -27,6 +27,23 @@ def createProblem(): ###
     ## 'varNames' is a list of variable names.
     ## 'low' is a list of lower bounds of the varaibles.
     ## 'up' is a list of upper bounds of the varaibles.
+    fileName = input("Enter the file name of a function:")
+    infile = open(fileName, 'r')
+    expression = str(infile.readline().rstrip())
+    v_n = []
+    low = []
+    upper = []
+    line = infile.readline().rstrip()
+    while line != '':
+        l = list(line.split(','))
+        v_n.append(l[0])
+        low.append(float(l[1]))
+        upper.append(float(l[2]))
+        line = infile.readline().rstrip()
+    print(v_n)
+    print(low)
+    print(upper)
+    domain = [v_n, low, upper]
     return expression, domain
 
 
@@ -47,6 +64,12 @@ def firstChoice(p):
 
 
 def randomInit(p): ###
+    domain = p[1]
+    init = []
+    for i in range(len(domain[1])):
+        l = domain[1][i]
+        h = domain[2][i]
+        init.append(random.uniform(l, h))
     return init    # Return a random initial point
                    # as a list of values
 
@@ -65,6 +88,10 @@ def evaluate(current, p):
 
 
 def randomMutant(current, p): ###
+    domain = p[1]
+    length = len(domain[1])
+    i = random.randint(0, length-1)
+    d = random.choice([DELTA, (DELTA*-1)])
     return mutate(current, i, d, p) # Return a random successor
 
 

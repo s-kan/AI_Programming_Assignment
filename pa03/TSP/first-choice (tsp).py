@@ -34,6 +34,31 @@ def createProblem():
 
 
 def calcDistanceTable(numCities, locations): ###
+    import numpy as np
+    v = []
+    d = []
+    a1arr = []
+    a2arr = []
+    b1arr = []
+    b2arr = []
+    carr = []
+    for i in range(numCities):
+        v.append(locations[i])
+
+    for i in range(numCities):
+        a1 = v[i][0]
+        a1arr.append(a1)
+        a2 = v[i][1]
+        a2arr.append(a2)
+    b1arr = list(a1arr)
+    b2arr = list(a2arr)
+
+    for i in range(numCities):
+        for j in range(numCities):
+            c = (((b1arr[j]-a1arr[i])**2) + (b2arr[j]-a2arr[i])**2) ** 0.5
+            carr.append(c)
+
+    table = np.array(carr).reshape(numCities, numCities)
     return table # A symmetric matrix of pairwise distances
 
 
@@ -63,6 +88,16 @@ def evaluate(current, p): ###
     ## Calculate the tour cost of 'current'
     ## 'p' is a Problem instance
     ## 'current' is a list of city ids
+    global NumEval
+
+    NumEval += 1
+
+    dtable = p[2]
+    cost = 0
+    for i in range(p[0]-1):
+        a = current[i]
+        b = current[i+1]
+        cost += dtable[a][b]
     return cost
 
 
