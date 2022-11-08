@@ -5,9 +5,6 @@
       <change beforePath="$PROJECT_DIR$/../N/first-choice (n).py" beforeDir="false" afterPath="$PROJECT_DIR$/../N/first-choice (n).py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../N/steepest ascent (n).py" beforeDir="false" afterPath="$PROJECT_DIR$/../N/steepest ascent (n).py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/first-choice (tsp).py" beforeDir="false" afterPath="$PROJECT_DIR$/first-choice (tsp).py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/steepest ascent (tsp).py" beforeDir="false" afterPath="$PROJECT_DIR$/steepest ascent (tsp).py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,11 +27,11 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/pc/OneDrive/바탕 화면/ai assignment/pa03/N",
+    "last_opened_file_path": "C:/Users/pc/OneDrive/바탕 화면/DataStructure_Assignment/pa7",
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
-  <component name="RunManager" selected="Python.first-choice (tsp)">
+  <component name="RunManager" selected="Python.steepest ascent (tsp)">
     <configuration name="first-choice (tsp)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="TSP" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -121,9 +118,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.steepest ascent (tsp)" />
         <item itemvalue="Python.first-choice (tsp)" />
         <item itemvalue="Python.steepest ascent (n)" />
-        <item itemvalue="Python.steepest ascent (tsp)" />
       </list>
     </recent_temporary>
   </component>

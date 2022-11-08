@@ -40,9 +40,7 @@ def createProblem(): ###
         low.append(float(l[1]))
         upper.append(float(l[2]))
         line = infile.readline().rstrip()
-    print(v_n)
-    print(low)
-    print(upper)
+    infile.close()
     domain = [v_n, low, upper]
     return expression, domain
 
