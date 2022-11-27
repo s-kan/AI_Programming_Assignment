@@ -1,0 +1,10 @@
+Conventional Algorithms VS AI Algorithms
+- Conventinal Algorithms : 항상 문제에 대한 정확하고 최적의 솔루션을 찾는다. exact algorithms 이라 불리기도 한다.
+- AI Algorithms : 정확한 솔루션이 나오지 않는, 솔루션과 최대한 가까운 최적의 솔루션을 구한다. 
+
+
+Local Search Algorithms
+- Hil-climbing Search
+- Simulated Annealing Search
+- Genetic Algorithms
+
